@@ -1,0 +1,75 @@
+.btn-red {
+    color: var(--white);
+    background-color: var(--red);
+    font-weight: 500;
+}
+
+.btn {
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.btn-primary:focus,
+.btn-primary:active {
+    outline: 2px solid rgba(255,255,255, 0.4);
+}
+
+.btn-back::before {
+    content: var(--chevron-left);
+    display: inline-block;
+    font-size: 31px;
+    margin-right: 5px;
+    line-height: .5;
+    vertical-align: top;
+}
+
+#scrollToTopBtn {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    bottom: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    right: 20px;
+    padding: 10px;
+    position: fixed;
+    z-index: 999;
+}
+
+#scrollToTopBtn::after {
+    content: var(--chevron-right);
+    display: block;
+    font-size: 35px;
+    height: 25px;
+    line-height: .6;
+    transform: rotate(-90deg);
+    width: 25px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: var(--blue-hover); /* Darker color on hover */
+}
+
+.scroll-btn {
+    display: none;
+}
+
+.scroll-btn.show {
+    display: block;
+}

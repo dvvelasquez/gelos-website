@@ -1,0 +1,93 @@
+.accordion-link-button {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: var(--charcoal);
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.digital-transformation::before {
+    content: "\2699";
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.cloud-services::before {
+    content: "\2601";
+    margin-right: 5px;
+}
+
+.artificial-intelligence {
+    align-items: center;
+    display: flex;
+}
+
+.artificial-intelligence::before {
+    border: 1px solid var(--charcoal);
+    content: "AI";
+    font-size: 16px;
+    margin-right: 10px;
+    padding: 2.5px;
+}
+
+.accordion-link-button .chevron {
+    right: 14px;
+    transform: rotate(90deg);
+    top: 3px;
+    position: absolute;
+    transition: transform var(--transition) ease-in-out;
+}
+
+.accordion .offerings-item.active .accordion-link-button .chevron {
+    right: 18px;
+    transform: rotate(-90deg);
+}
+
+.accordion .offerings-item.active {
+    background-color: var(--white);
+}
+
+.accordion-link-button .chevron::after {
+    content: var(--chevron-right);
+    font-family: var(--font-family-secondary);
+}
+
+.accordion .offerings-item {
+    border: 1px solid var(--gray-100);
+    background-color: var(--gray-200);
+    border-radius: 10px;
+}
+
+.accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+}
+
+.list-title,
+.accordion-link-button {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-h3-heading-sm);
+    font-weight: var(--font-weight-bold);
+    text-align: left;
+    margin: 0;
+    width: 100%;
+}
+
+.offerings-item {
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 576px) {
+    .list-title,
+    .accordion-link-button {
+        font-size: var(--font-size-h3-heading);
+    }
+}

@@ -1,0 +1,74 @@
+.contact-form .form-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+    border: 2px solid var(--white);
+    border-radius: 8px;
+    font-family: var(--body-font-family);
+    margin-bottom: 15px;
+    outline: none;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.contact-form .form-control:focus-visible {
+    border: 2px solid var(--gray-300);
+    outline: none;
+}
+
+.contact-form .form-control::placeholder {
+    color: var(--gray-500);
+}
+
+.contact-form .btn-submit {
+    border: 0;
+    outline: 0;
+    width: 100%;
+}
+
+.form-field label span {
+    color: var(--red);
+}
+
+.invalid-feedback {
+    display: none;
+}
+
+#form-error-msg {
+    background-color: var(--light-red);
+    padding: 5px;
+    text-align: center;
+}
+
+#form-error-msg .feedback {
+    margin: 0;
+}
+
+/* ========================
+Erro Messages Styling
+======================== */
+.contact-form .form-field.is-invalid .form-control {
+    border-color: var(--red);
+}
+
+.form-field.is-invalid .form-control {
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
+.form-field.is-invalid .form-control::placeholder {
+    color: var(--red);
+}
+
+.invalid-feedback.is-invalid {
+    color: var(--red);
+    display: block;
+    margin-bottom: 15px;
+}
+
+#form-error-msg.invalid-feedback.is-invalid {
+    color: var(--dark-red);
+    margin: 0;
+}

@@ -1,0 +1,52 @@
+/* ========================
+Main Variables
+======================== */
+:root {
+    --primary: #DDAB5E;
+    --primary-hover: #cfa05a;
+    --secondary: #A08463;
+    --charcoal: #424754;
+    --blue: #077A99;
+    --blue-hover: #077391;
+    --lightblue: #94B2BF;
+    --off-white: #F8F9FA;
+    --white: #FFFFFF;
+    --red: #FF0000;
+    --light-red: #faadad;
+    --dark-red: #ce2b2b;
+
+    --gray-100: #D9D9D9;
+    --gray-200: #F5F5F5;
+    --gray-300: #c3c4c5;
+    --gray-400: #88898a;
+    --gray-500: #495057;
+    --gray-600: #424242;
+
+    --radious: 8px;
+    --transition: .3s;
+    --section-spacing: 50px;
+
+    /* elements */
+    --chevron-right: "\203A";
+    --chevron-left: "\2039";
+    --chevron-up: "\2303";
+
+    /* Font variables */
+    --font-family-heading: Georgia, 'Times New Roman', Times, serif;
+    --font-size-heading: 2.375rem;
+    --font-size-heading-sm: 1.75rem;
+    --font-size-subheading: 1.875rem;
+    --font-size-subheading-sm: 1.4rem;
+    --font-size-h3-heading: 1.5rem;
+    --font-size-h3-heading-sm: 1.2rem;
+    --font-size-h4-heading: 1rem;
+
+    --font-family-secondary: Calibri, Arial, sans-serif;
+    --font-size-body: 16px;
+
+    --font-family-heading-sm: var(--font-family-secondary);
+    --body-font-family: var(--font-family-secondary);
+
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}

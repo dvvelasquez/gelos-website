@@ -1,0 +1,62 @@
+/* ========================
+Global Classes
+======================== */
+.container {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full-width-column,
+.column-2,
+.column-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .column-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .column-3 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
