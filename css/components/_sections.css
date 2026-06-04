@@ -28,6 +28,10 @@ Contact Section Styling
     margin-bottom: 25px;
 }
 
+.split-module-column.contact-column {
+    margin-top: 40px;
+}
+
 /* ========================
 Footer Section Styling
 ======================== */
@@ -119,5 +123,9 @@ Sections mediaqueries styling
 
     .page-hero-banner {
         min-height: 24vw;
+    }
+
+    .split-module-column.contact-column {
+        margin-top: 0;
     }
 }
