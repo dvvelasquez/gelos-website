@@ -6,7 +6,7 @@ import { accordion } from './components/accordion.js';
 import { form } from "./controllers/form-validation.js";
 import { displayYear } from "./components/display-year.js";
 import { displayScrollBtn } from "./components/display-scroll-up-btn.js";
-import { chatbot } from "./components/chatbot.js"
+// import { chatbot } from "./components/chatbot.js"
 
 const init = async () => {
     const navListData = await getNavigationData();
@@ -15,7 +15,7 @@ const init = async () => {
     displayGelosNavigation.init(navListData);
     displayYear.init();
     displayScrollBtn.init();
-    chatbot.init();
+    // chatbot.init();
 
     const homePage = getElement.single('.homepage');
     if (homePage) {
